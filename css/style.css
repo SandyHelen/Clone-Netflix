@@ -1,0 +1,124 @@
+:root {
+	--vermelho: #E50914;
+	--preto: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/***elementos bases***/
+
+body {
+	background: var(--preto);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: white;
+}
+
+header .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo {
+	margin-left: 5px;
+	color: var(--vermelho);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 35px;
+}
+
+header nav a{
+	text-decoration: none;
+	color: #AAA;
+	margin-right: 10px;
+}
+header nav a:hover {
+	color: #fff;
+}
+
+/***filme principal***/
+.container {
+	margin-left: 30px;	
+}
+
+.filme-principal {
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa.jpg');
+	height: 450px;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.filme-principal .titulo {
+	margin-top: 15%;
+	font-size: 40px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.filme-principal .container {
+	width: 60%;
+}
+
+.container .informacao {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	color: #AAA;
+	padding: 10px 0;
+}
+
+.container .descricao {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.botao {
+	background-color: rgba(0, 0, 0, .50);
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	margin-right: 15px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.botao:hover {
+	background-color: #FAFAFA;
+	color: var(--preto);
+}
+
+.botao i{
+	margin-right: 8px;
+}
+
+/***setup carrossel***/
+.box-filme {
+	height: 300px;
+	width: 100%;
+	display: block;
+}
+
+.carrossel-filmes {
+	margin-top: 5px;
+}
+
+
+.box-filme { 
+    transition: 0.5s; 
+}
+
+.box-filme:hover { 
+	transform: scale(0.9);
+	opacity: 70%; 
+}
+
+
+
+
